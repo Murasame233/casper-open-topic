@@ -1,0 +1,22 @@
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2018"
+
+[dev-dependencies]
+casper-contract = { version = "1.3.3", default-features = false, features = ["std", "test-support"] }
+casper-engine-test-support = { version = "1.3.3", features = ["test-support"] }
+casper-types = { version = "1.3.3", default-features = false, features = ["std"] }
+
+[[bin]]
+name = "caller_record_tests"
+path = "src/caller_record_tests.rs"
+bench = false
+doctest = false
+
+[[bin]]
+name = "erc20_caller.rs"
+path = "src/erc20_caller.rs"
+bench = false
+doctest = false
+

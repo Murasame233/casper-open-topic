@@ -1,0 +1,1 @@
+[Session { account_hash: AccountHash(105b69f2d74a211a6cb337cba6751a8f15cc7b44b7c65329c29731b67e1ac047) }, StoredContract { contract_package_hash: ContractPackageHash(b9f3c7324b7233377dd939d53f63d8589eef0b7edcfb3d2eb26d25e9b05936e0), contract_hash: ContractHash(b9b655aeef5fe5afa15d4fd32f5e3152fe3399bed826737c9c68fd219c655667) }]
