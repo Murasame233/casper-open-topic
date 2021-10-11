@@ -65,3 +65,5 @@ We need a new `set_secret` entrypoint, with two parameter:
 old_secret: String (valid secret)
 new_hash: String (Hex format)
 ```
+
+After valid user old_secret, update hash to new_hash.
