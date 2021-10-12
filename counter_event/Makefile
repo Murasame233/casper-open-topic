@@ -10,7 +10,7 @@ test: build-contract
 	mkdir -p tests/wasm
 	cp contract/target/wasm32-unknown-unknown/release/counter.wasm tests/wasm
 	cp contract/target/wasm32-unknown-unknown/release/logger.wasm tests/wasm
-	cd tests && cargo test
+	cd tests && cargo test -- --nocapture
 
 clippy:
 	cd contract && cargo clippy --all-targets -- -D warnings
