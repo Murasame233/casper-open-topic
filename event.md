@@ -43,6 +43,10 @@ test:
 make test
 ```
 
+the test will have output for let user know how it work simply.
+
+and see the test code for more information.
+
 ## how it work - step
 
 the counter contract will have two entry after deploy

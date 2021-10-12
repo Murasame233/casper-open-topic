@@ -67,3 +67,6 @@ new_hash: String (Hex format)
 ```
 
 After valid user old_secret, update hash to new_hash.
+
+# TODO
+- erc-20-casper standard implement
