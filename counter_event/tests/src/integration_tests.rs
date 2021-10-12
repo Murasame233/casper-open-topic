@@ -79,6 +79,8 @@ mod tests {
         let count: u32 = get_count(&context, account_hash);
         assert_eq!(count, 0);
 
+        println!("counter contract deployed.");
+
         let hash: ContractHash = context
             .query(account_hash, &["counter_hash".into()])
             .unwrap()
@@ -99,12 +101,15 @@ mod tests {
         .build();
         context.run(session);
 
+        println!("logger contract deployed, event should be set");
+
         let callbacks: Vec<(String, ContractHash, String)> = context
             .query(account_hash, &["callbacks".into()])
             .unwrap()
             .into_t()
             .unwrap();
         assert!(!callbacks.is_empty());
+        println!("Callbacks: {:?}", callbacks);
 
         // count
 
@@ -118,13 +123,15 @@ mod tests {
         let count = get_count(&context, account_hash);
         assert_eq!(count, 1);
 
+        println!("A count be called, and event listener should be call, the logger's log should be update.");
+
         let log: Vec<(String, u32)> = context
             .query(logger_hash, &["log".into()])
             .unwrap()
             .into_t()
             .unwrap();
         assert!(!log.is_empty());
-
+        println!("log: {:?}", log);
         assert_eq!(log[0].1, 1);
     }
 }
