@@ -11,7 +11,8 @@ Read these files to know about it
 # Other things
 This project also will have update after hackthon
 
-TODO:
+ROADMAP:
+- make a casper-event package
 - new erc-20-casper standard example
 
 # P.S.
