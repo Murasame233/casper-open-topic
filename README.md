@@ -12,7 +12,8 @@ Read these files to know about it
 This project also will have update after hackthon
 
 ROADMAP:
-- make a casper-event package
+- make a casper-event package (Done, [crate.io](https://crates.io/crates/casper_event), [repo](https://github.com/Murasame233/casper-event))
+
 - new erc-20-casper standard example
 
 # P.S.
